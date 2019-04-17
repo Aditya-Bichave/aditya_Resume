@@ -1,14 +1,24 @@
 \documentclass[10pt]{article}
 
+%packages
+
 \usepackage{titlesec}
 \usepackage{titling}
-\usepackage[margin=1in] {geometry}
+\usepackage[margin=0.5in] {geometry}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+
+%section
 
 \titleformat{\section}
 {\Large \bfseries \uppercase}
-{\thesection}
+{\hspace{-.25in}\thesection}
 {0em}
 {. }[\titlerule]
+
+
+%sub Section
 
 \titleformat{\subsection}
 {\bfseries\large}
@@ -16,22 +26,67 @@
 {0em}
 { }
 
+%sub Sub Section
+
 \titleformat{\subsubsection}[runin]
 {\bfseries}
 {}
 {0em}
-{-}
+{-}  
+
+\titlespacing{\subsubSection}
+{0em}{0em}{0em}
+
+
+%make titile
 
 \renewcommand{\maketitle}{
 \begin{center}
-{\Large\bfseries
+{\LARGE\bfseries
 \theauthor}
 
 \vspace{.25em}
-
-aditya.bichave@gmail.com   
+\line(1,0){250}
 \end{center}
+\begin{multicols}{2}
+\noindent
+%address
+Fl.No. 11/A,\\
+Hariangan Society,\\
+Near New Life Hospital,\\
+Gurudwara Chowk,\\
+Akurdi,Pune -411044\\
+
+\columnbreak
+\begin{flushright}
+Contact: +91-7798497481\\
+E-mail Id: aditya.bichave@gmail.com\\
+Github: \url{https://github.com/Aditya-Bichave}
+\end{flushright}
+\end{multicols}
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \begin{document}
 
@@ -41,9 +96,25 @@ aditya.bichave@gmail.com
 
 \section{Objective}
 
+To seek a challenging position as a Machine Learning Engineering with an organization of repute, where I can utilize my skills and knowledge of Computer Science concepts and advance technologies like Deep Learning, Image processing.
+
 \section{Education}
 
+\begin{tabular}[8pt]{| c | c | c | c | c |}
+\hline
+	Degree & College/School & University & passing year & Pass Percentage\\
+\hline
+	B.E Computer Engineering & Pimpri Chinchawad College of Engineering ,Pune & SPPU & 2021 & -- \\
+\hline
+	H.S.C & Ashoka Universal School and Jr.College,Nashik & ISC & 2017 & 83.60 \\
+\hline
+	S.S.C & Sacred Heart Convent High School, Nashik & S.S.C & 2015 & 91.00\\
+\hline
+\end{tabular} 
+
 \section{Projects}
+
+
 
 \section{Training \& Internship}
 
@@ -55,13 +126,41 @@ aditya.bichave@gmail.com
 			C, C++, Python, Java.
 		\subsubsection{Markup Languages:}
 			HTML,CSS,XML
+		\subsubsection{Tools}
+			PyTorch,Tensorflow,Keras, OpenCV,Android Studio,Atmel Studio,Arduino
 
 \section{Soft Skills}
+	\begin{tabular}{ l l }
+	$\bullet$\large{Confident} & 	$\bullet$\large{Problem Solving}\\
+	$\bullet$\large{Motivated} &	$\bullet$\large{Curious}\\
+	$\bullet$\large{Persistent} &	$\bullet$\large{Teamwork}\\
+	$\bullet$\large{Self-managment}\\
+	\end{tabular}
+
 
 \section{Extra-curricular Activities}
 
+
+
 \section{co-curricular activities}
 
-\section{Personal Details}
+
+
+\section{Personal Details} 
+\begin{itemize}
+
+\item{Father's Name: Anand Bichave}
+\item{Mother's NAme: Rashmi Bichave}
+\item{Sex: Male}
+\item{Date Of Birth: 9th April, 1999}
+\item{Nationality: Indian}
+\item{Marital Status: Single}
+
+\end{itemize}
+
+
+
+
+
 
 \end{document} 
